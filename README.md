@@ -2,7 +2,8 @@
 
 Code, harness, data and report for a study of how much random noise on the parameters an *exactly correct* network tolerates, and how that depends on how the network was built: compiled from a program (Tracr), hand-constructed (restoring-state and bilinear designs), trained, composed from several programs, or written by a large language model.
 
-* **Report (read this first):** WEBSITE_REPORT_URL
+* **Report (read this first):** [Technical report](https://epalea.com/learnings/fragility-of-exact-networks) ([local Markdown source](report/REPORT.md))
+* **Archived release (concept DOI):** [Zenodo](https://doi.org/10.5281/zenodo.24275681)
 * **Report source:** [`report/REPORT.md`](report/REPORT.md) with figures in [`report/figures/`](report/figures/)
 * **Lab notebook with every result table:** [`RESULTS.md`](RESULTS.md)
 * **Consolidated dataset (115 networks):** [`results/implementation_dataset.csv`](results/implementation_dataset.csv)

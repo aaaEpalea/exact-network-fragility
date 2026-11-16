@@ -18,10 +18,9 @@ Hypotheses, not results. "Prior-art risk" is a guess to be settled by the prior-
 | 13 | Composition of restoring stages does not compound errors (min over stages, not sum) | S5 B #8 | pipelines 0.065 vs 0.068 alone (I6) | analog stages compound | medium |
 | 14 | Exactness, robustness and cost are not in a universal trade-off | S5 C | bilinear exact and tolerant; replication trades axes; interpreter no gain | none yet | low |
 | 15 | Large hard-attention scores (|w| ~ 50-300) coexist with sigma50 ~ 1e-3: robustness is set by the least-margin component, not by weight size | M (new, J) | LLM-built transformers (J) | weight scale vs margin | unknown |
+| 16 | Failure level of piecewise-linear constructed networks is set by the one-sided (tangent-cone) first-order response; constructions place ReLU kinks exactly at the operating point, so gradients miss the sensitivity; saturated hard attention (`reverse`) is the failure mode of the first-order model | M (new, theory exploration 2) | held-out run: Spearman 0.82, median error 0.116 log10 (same family, same tasks); 10/12 development networks have first-order L-inf radius = attack radius within 1.4x | gradient/Hessian-based sharpness measures; nonlinear saturation | unknown (piecewise-linear analysis is standard; the application is untested) |
 
 Held-out discipline: the LLM-synthesized networks (J, and the fresh-session run) are reserved as held-out data for the Stage 5 predictive test; they must not be used to develop candidates 1-14.
-
-| 16 | Failure level of piecewise-linear constructed networks is set by the one-sided (tangent-cone) first-order response; constructions place ReLU kinks exactly at the operating point, so gradients miss the sensitivity; saturated hard attention (`reverse`) is the failure mode of the first-order model | M (new, theory exploration 2) | held-out run: Spearman 0.82, median error 0.116 log10 (same family, same tasks); 10/12 development networks have first-order L-inf radius = attack radius within 1.4x | gradient/Hessian-based sharpness measures; nonlinear saturation | unknown (piecewise-linear analysis is standard; the application is untested) |
 
 Correction (2026-11-13): candidates 1 and 9 were tested only through autodiff gradients, which are wrong at ReLU kinks; see `theory/THEORY_EXPLORATION_2.md`.
 

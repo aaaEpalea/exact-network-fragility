@@ -7,6 +7,7 @@ PARTS = {**A.PARTS, **G.PARTS}; SUB = {**A.SUB, **G.SUB}; FIG = {}
 for d in (A.FIG, G.FIG): FIG.update({k: [v] for k, v in d.items()})
 addfig_defined = True
 def addfig(k, f, cap): FIG.setdefault(k, []).append((f, cap))
+addfig("I3", "I2_nscale.png", "**Figure I3c.** Minimum key width divided by the number of stored transitions against the number of states n (random automata, one and four programs): there is no compression gain as n grows.")
 addfig("D8", "diagram_tied.png", "**Figure D8.** Weight-tied design: the transition matrices (up, down, hold) are shared; each program only selects which role each token uses.")
 addfig("I3", "diagram_fwi.png", "**Figure I3b.** The fast-weight interpreter: a key built from token, state and program address (Hadamard product of random codes) reads the fast transition memory F; the clip restores the state; readout and initial state are also fast memories.")
 addfig("I5", "I0_certificate_gap.png", "**Figure I5b.** Certified radius against first failure found by the attack, for the tied designs, the interpreter and the LLM-built transformers. Every point lies on or above the diagonal; the vertical distance to it is the looseness of the certificate.")

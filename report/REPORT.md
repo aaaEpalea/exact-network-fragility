@@ -1,6 +1,6 @@
 # How fragile are exactly-correct neural networks? A technical report on constructed, compiled, trained and LLM-written networks under parameter noise
 
-*Technical report and lab notebook. Code, harness, data and every intermediate result are in the accompanying repository: GITHUB_REPO_URL*
+*Technical report and lab notebook. Code, harness, data and every intermediate result are in the accompanying repository: https://github.com/aaaEpalea/exact-network-fragility (archived release, DOI: https://doi.org/10.5281/zenodo.24275681).*
 
 ## Summary
 
@@ -1566,6 +1566,10 @@ Findings. (1) **Yes, one shared interpreter executes genuinely different program
 
 **Figure I3.** Left: the minimum key width of one shared fast memory divided by the number of stored transitions, against the number of programs, for four sets of increasing diversity. Right: parameter accounting against the number of programs (mixed families).
 
+![Figure I3c.](figures/I2_nscale.png)
+
+**Figure I3c.** Minimum key width divided by the number of stored transitions against the number of states n (random automata, one and four programs): there is no compression gain as n grows.
+
 ![Figure I3b.](figures/diagram_fwi.png)
 
 **Figure I3b.** The fast-weight interpreter: a key built from token, state and program address (Hadamard product of random codes) reads the fast transition memory F; the clip restores the state; readout and initial state are also fast memories.
@@ -2228,10 +2232,9 @@ Hypotheses, not results. "Prior-art risk" is a guess to be settled by the prior-
 | 13 | Composition of restoring stages does not compound errors (min over stages, not sum) | S5 B #8 | pipelines 0.065 vs 0.068 alone (I6) | analog stages compound | medium |
 | 14 | Exactness, robustness and cost are not in a universal trade-off | S5 C | bilinear exact and tolerant; replication trades axes; interpreter no gain | none yet | low |
 | 15 | Large hard-attention scores (abs(w) ~ 50-300) coexist with sigma50 ~ 1e-3: robustness is set by the least-margin component, not by weight size | M (new, J) | LLM-built transformers (J) | weight scale vs margin | unknown |
+| 16 | Failure level of piecewise-linear constructed networks is set by the one-sided (tangent-cone) first-order response; constructions place ReLU kinks exactly at the operating point, so gradients miss the sensitivity; saturated hard attention (`reverse`) is the failure mode of the first-order model | M (new, theory exploration 2) | held-out run: Spearman 0.82, median error 0.116 log10 (same family, same tasks); 10/12 development networks have first-order L-inf radius = attack radius within 1.4x | gradient/Hessian-based sharpness measures; nonlinear saturation | unknown (piecewise-linear analysis is standard; the application is untested) |
 
 Held-out discipline: the LLM-synthesized networks (J, and the fresh-session run) are reserved as held-out data for the Stage 5 predictive test; they must not be used to develop candidates 1-14.
-
-| 16 | Failure level of piecewise-linear constructed networks is set by the one-sided (tangent-cone) first-order response; constructions place ReLU kinks exactly at the operating point, so gradients miss the sensitivity; saturated hard attention (`reverse`) is the failure mode of the first-order model | M (new, theory exploration 2) | held-out run: Spearman 0.82, median error 0.116 log10 (same family, same tasks); 10/12 development networks have first-order L-inf radius = attack radius within 1.4x | gradient/Hessian-based sharpness measures; nonlinear saturation | unknown (piecewise-linear analysis is standard; the application is untested) |
 
 Correction (2026-11-13): candidates 1 and 9 were tested only through autodiff gradients, which are wrong at ReLU kinks; see `theory/THEORY_EXPLORATION_2.md`.
 
@@ -2339,7 +2342,7 @@ Not found: a comparison of parameter-perturbation robustness across compiler-bui
 
 ## 18. Reproducibility and repository guide
 
-**Repository.** GITHUB_REPO_URL (this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
+**Repository.** https://github.com/aaaEpalea/exact-network-fragility (archived release with DOI https://doi.org/10.5281/zenodo.24275681; this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
 
 **Environment.** Python 3.12, JAX (CPU), NumPy, SciPy, Matplotlib, optax; Tracr and dm-haiku installed from the Tracr repository for the compiled baselines. The longest experiments run in minutes to about an hour on one CPU core; the Part I scaling study took about 1.5 hours in total. Every long script is resumable.
 

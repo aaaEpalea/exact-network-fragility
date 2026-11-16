@@ -36,7 +36,7 @@
 
 ## 18. Reproducibility and repository guide
 
-**Repository.** GITHUB_REPO_URL (this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
+**Repository.** https://github.com/aaaEpalea/exact-network-fragility (archived release with DOI https://doi.org/10.5281/zenodo.24275681; this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
 
 **Environment.** Python 3.12, JAX (CPU), NumPy, SciPy, Matplotlib, optax; Tracr and dm-haiku installed from the Tracr repository for the compiled baselines. The longest experiments run in minutes to about an hour on one CPU core; the Part I scaling study took about 1.5 hours in total. Every long script is resumable.
 

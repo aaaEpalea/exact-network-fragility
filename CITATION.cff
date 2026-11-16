@@ -1,3 +1,4 @@
+
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "How fragile are exactly-correct neural networks? A technical report on constructed, compiled, trained and LLM-written networks under parameter noise"
@@ -6,8 +7,8 @@ authors:
     given-names: "Aliyu Alege"
     affiliation: "Epalea Research Lab"
 type: software
-version: "1.0.0"
-date-released: "2026-11-15"
+version: "1.0.1"
+date-released: "2026-11-16"
 license: MIT
-repository-code: "GITHUB_REPO_URL"
-url: "WEBSITE_REPORT_URL"
+repository-code: "https://github.com/aaaEpalea/exact-network-fragility"
+url: "https://epalea.com/learnings/fragility-of-exact-networks"
