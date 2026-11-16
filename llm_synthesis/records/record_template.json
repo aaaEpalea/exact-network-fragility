@@ -1,0 +1,18 @@
+{
+  "attempt_id": "<task>__<condition>__<category>__<feedback>__<attempt-number>__<run: contaminated|fresh>",
+  "run": "contaminated | fresh",
+  "construction_category": "3b (LLM code computes analytic weights) | 4 (LLM writes literal weight values)",
+  "synthesis_condition": "constrained | unconstrained",
+  "task": "", 
+  "llm_identity": "<model name as shown in the UI>", "llm_version": "<version/date if shown>",
+  "interface": "<e.g. claude.ai web chat, API>", "sampling_settings": "<temperature/top_p/etc, or 'chat default, unknown'>",
+  "prompt_file": "<prompts/rendered/...md>", "prompt_sha256": "",
+  "independent_attempt_number": 1, "new_chat_per_attempt": true,
+  "execution_feedback_available": "none | clean_check (dev-set accuracy + 3 failing examples)",
+  "revisions_allowed": 0, "revisions_used": 0,
+  "code_execution_available_to_llm": "yes/no (could the LLM run code in its session?)",
+  "architecture": {}, "n_params": 0,
+  "weight_generation_procedure": "<one sentence: how the weights are produced>",
+  "raw_transcript_file": "records/transcripts/<id>.md", "submission_file": "submissions/<id>.py|json",
+  "notes": ""
+}

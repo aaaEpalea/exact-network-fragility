@@ -1,0 +1,30 @@
+{
+ "task": "parity",
+ "condition": "unconstrained",
+ "submission": "llm_synthesis/fresh_run/submissions/parity__unconstrained__4__none__a2.json",
+ "meta": {},
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 10,
+  "d_head": 1,
+  "d_mlp": 35,
+  "causal": true
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 970,
+  "nonzero_frac": 0.14329896907216494,
+  "max_abs": 32.0,
+  "mean_abs_nonzero": 5.645452499389648
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 6.30962347984314
+}

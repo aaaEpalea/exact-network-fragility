@@ -1,0 +1,30 @@
+{
+ "task": "length",
+ "condition": "unconstrained",
+ "submission": "llm_synthesis/fresh_run/submissions/length__unconstrained__4__none__a2.json",
+ "meta": {},
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 2,
+  "d_head": 1,
+  "d_mlp": 6,
+  "causal": false
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 78,
+  "nonzero_frac": 0.28205128205128205,
+  "max_abs": 57.0,
+  "mean_abs_nonzero": 6.004220485687256
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 5.180857181549072
+}

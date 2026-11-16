@@ -1,0 +1,30 @@
+{
+ "task": "hist",
+ "condition": "constrained",
+ "submission": "llm_synthesis/fresh_run/submissions/hist__constrained__3b__clean_check__a1_rev0.py",
+ "meta": {},
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 16,
+  "d_head": 8,
+  "d_mlp": 32,
+  "causal": false
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 1881,
+  "nonzero_frac": 0.022860180754917598,
+  "max_abs": 56.0,
+  "mean_abs_nonzero": 8.716412544250488
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 6.687288284301758
+}

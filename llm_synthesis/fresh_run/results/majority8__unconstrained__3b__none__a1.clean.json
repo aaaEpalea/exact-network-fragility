@@ -1,0 +1,30 @@
+{
+ "task": "majority8",
+ "condition": "unconstrained",
+ "submission": "llm_synthesis/fresh_run/submissions/majority8__unconstrained__3b__none__a1.py",
+ "meta": {},
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 2,
+  "d_head": 1,
+  "d_mlp": 1,
+  "causal": true
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 56,
+  "nonzero_frac": 0.10714285714285714,
+  "max_abs": 1.0,
+  "mean_abs_nonzero": 0.84375
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 5.851614952087402
+}

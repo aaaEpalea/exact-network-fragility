@@ -1,0 +1,30 @@
+{
+ "task": "reverse",
+ "condition": "constrained",
+ "submission": "llm_synthesis/fresh_run/submissions/reverse__constrained__3b__none__a2.py",
+ "meta": {},
+ "config": {
+  "n_layers": 2,
+  "n_heads": 2,
+  "d_model": 32,
+  "d_head": 16,
+  "d_mlp": 64,
+  "causal": false
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 17543,
+  "nonzero_frac": 0.003933192726443596,
+  "max_abs": 80.0,
+  "mean_abs_nonzero": 7.5683746337890625
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 12.839672088623047
+}

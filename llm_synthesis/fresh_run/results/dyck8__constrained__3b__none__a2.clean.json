@@ -1,0 +1,30 @@
+{
+ "task": "dyck8",
+ "condition": "constrained",
+ "submission": "llm_synthesis/fresh_run/submissions/dyck8__constrained__3b__none__a2.py",
+ "meta": {},
+ "config": {
+  "n_layers": 2,
+  "n_heads": 2,
+  "d_model": 32,
+  "d_head": 16,
+  "d_mlp": 128,
+  "causal": true
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 25698,
+  "nonzero_frac": 0.0003891353412716943,
+  "max_abs": 16.0,
+  "mean_abs_nonzero": 3.200000047683716
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 14.229211330413818
+}

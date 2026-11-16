@@ -1,0 +1,32 @@
+{
+ "attempt_id": "parity__unconstrained__3b__none__a1__contaminated",
+ "run": "contaminated",
+ "construction_category": "3b",
+ "synthesis_condition": "unconstrained",
+ "task": "parity",
+ "llm_identity": "Claude (Sonnet 5.5, project session)",
+ "llm_version": "as in session system prompt",
+ "interface": "claude.ai chat with code execution",
+ "sampling_settings": "chat default, unknown",
+ "prompt_file": "prompts/rendered/parity__unconstrained__3b__none.md",
+ "prompt_sha256": "",
+ "independent_attempt_number": 1,
+ "new_chat_per_attempt": false,
+ "execution_feedback_available": "none",
+ "revisions_allowed": 0,
+ "revisions_used": 0,
+ "code_execution_available_to_llm": "yes (not used on the construction before it was finalised)",
+ "architecture": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 4,
+  "d_head": 1,
+  "d_mlp": 7,
+  "causal": true
+ },
+ "n_params": 160,
+ "weight_generation_procedure": "code computing analytic weights (contaminated_authoring.py)",
+ "raw_transcript_file": "records/transcripts/contaminated_run_note.md",
+ "submission_file": "submissions/contam__parity__unconstrained__3b__none__a1.py",
+ "notes": "clean correct on hidden test set and exhaustively; "
+}

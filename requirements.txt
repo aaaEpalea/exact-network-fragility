@@ -1,0 +1,13 @@
+# Python 3.12, CPU only. Tested versions:
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+jax==0.12.0.1
+jaxlib==0.12.0.1
+optax==0.2.8
+chex==0.1.92
+dm-haiku==0.0.17
+# Tracr (compiled-transformer baselines, Parts A-C and J-L); installed from the project repository:
+tracr @ git+https://github.com/google-deepmind/tracr.git
+# only for regenerating the report text/figures:
+Pillow==13.0.0

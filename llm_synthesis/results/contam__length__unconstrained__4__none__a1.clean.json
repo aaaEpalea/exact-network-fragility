@@ -1,0 +1,38 @@
+{
+ "task": "length",
+ "condition": "unconstrained",
+ "submission": "llm_synthesis/submissions/contam__length__unconstrained__4__none__a1.json",
+ "meta": {
+  "llm_identity": "Claude (the Claude Sonnet 5.5 instance of the project session)",
+  "llm_version": "as reported in the session system prompt",
+  "interface": "claude.ai chat with code execution (project session)",
+  "sampling_settings": "chat default, unknown",
+  "code_execution_available": "yes",
+  "run": "contaminated (had seen the project RESULTS, code, bilinear/tied/interpreter designs)",
+  "package_sha256": "a528b01d96fb9158dbd42af1ca260c1336866e7f191d0f5be1ebc42866fdc8e1"
+ },
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 4,
+  "d_head": 1,
+  "d_mlp": 6,
+  "causal": false
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 146,
+  "nonzero_frac": 0.15753424657534246,
+  "max_abs": 56.0,
+  "mean_abs_nonzero": 5.400775909423828
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 5.12064528465271
+}

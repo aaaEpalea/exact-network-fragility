@@ -1,0 +1,4 @@
+# Harness changelog
+* v1 (frozen, package sha256 a528b01d96fb9158dbd42af1ca260c1336866e7f191d0f5be1ebc42866fdc8e1): used for the contaminated run (J) and delivered in `llm_synthesis_package.zip`; `harness/evaluate_v1_frozen.py.bak` is the v1 `evaluate.py`.
+* v2: `evaluate.attack_margin` compiles its jitted functions once per model (cached on the model object) instead of once per call. Performance only (~7x faster); attack first-failure value verified bit-identical to v1 on `majority8__unconstrained__3b__none__a1` (0.005650351563629157). Used for the fresh run (K). In this working copy `freeze.py --check` therefore reports `harness/evaluate.py` as changed; the delivered clean package (`llm_synthesis_package.zip`) is unchanged.
+* Added after the freeze (not part of the frozen package): `batch_eval.py`, `batch_fresh.py`, `aggregate_contaminated.py`, `aggregate_fresh.py`, `splice_J.py`, `splice_K.py`.

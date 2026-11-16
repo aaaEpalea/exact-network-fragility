@@ -1,0 +1,19 @@
+{
+ "task": "parity",
+ "condition": "constrained",
+ "submission": "llm_synthesis/fresh_run/submissions/parity__constrained__3b__clean_check__a1_rev1.py",
+ "meta": {},
+ "config": {
+  "n_layers": 2,
+  "n_heads": 2,
+  "d_model": 32,
+  "d_head": 16,
+  "d_mlp": 128,
+  "causal": true
+ },
+ "validation_errors": [
+  "constrained condition requires config {'n_layers': 2, 'n_heads': 2, 'd_model': 16, 'd_head': 8, 'd_mlp': 64, 'causal': True}, got {'n_layers': 2, 'n_heads': 2, 'd_model': 32, 'd_head': 16, 'd_mlp': 128, 'causal': True}"
+ ],
+ "status": "invalid_submission",
+ "seconds": 0.0005273818969726562
+}

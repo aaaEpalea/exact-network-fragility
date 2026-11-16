@@ -1,0 +1,64 @@
+pipelines [(0, 2), (0, 3), (1, 2), (1, 3), (0, 4), (2, 3), (3, 4)] clean exact: [1. 1. 1. 1. 1. 1. 1.]
+pipeline: FWI sigma50 fast-only 0.078 slow-only 0.094 joint 0.065 | same programs alone 0.088/0.095/0.068 | independent pipelined nets 0.117
+Traceback (most recent call last):
+  File "code/exp_C5_comp.py", line 68, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "code/exp_C5_comp.py", line 66, in main
+    if "online" not in res: res["online"] = online(); json.dump(res, open(OUT, "w"), indent=1)
+                                            ^^^^^^^^
+  File "code/exp_C5_comp.py", line 51, in online
+    Km_all = [tape([pr], th, nmax, Kmax)["F"] for pr in progs]; Km_all = [(k, y) for k, y in Km_all]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "code/fw_lib.py", line 88, in tape
+    for i in range(pr["n"]): Rk.append(th["B"][:, i] * th["C"][:, p] / np.sqrt(dk)); Ry.append(np.eye(Kmax, dtype=np.float32)[pr["table"][i]])
+                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+IndexError: index 5 is out of bounds for axis 0 with size 5
+Traceback (most recent call last):
+  File "code/exp_C5_comp.py", line 68, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "code/exp_C5_comp.py", line 66, in main
+    if "online" not in res: res["online"] = online(); json.dump(res, open(OUT, "w"), indent=1)
+                                            ^^^^^^^^
+  File "code/exp_C5_comp.py", line 51, in online
+    Km_all = [tape([pr], th, nmax, Kmax)["F"] for pr in progs]; Km_all = [(k, y) for k, y in Km_all]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "code/fw_lib.py", line 88, in tape
+    for i in range(pr["n"]): Rk.append(th["B"][:, i] * th["C"][:, p] / np.sqrt(dk)); Ry.append(np.eye(Kmax, dtype=np.float32)[pr["table"][i]])
+                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+IndexError: index 5 is out of bounds for axis 0 with size 5
+online dk_1.3x_min16 add program #5: no-rehearsal new ok=True old exact 0/4 | with rehearsal new ok=True old exact 4/4 (steps 25)  (1s)
+online dk_1.3x_min16 add program #6: no-rehearsal new ok=True old exact 0/5 | with rehearsal new ok=True old exact 5/5 (steps 25)  (2s)
+online dk_1.3x_min16 add program #7: no-rehearsal new ok=True old exact 0/6 | with rehearsal new ok=True old exact 6/6 (steps 25)  (2s)
+online dk_1.3x_min16 add program #8: no-rehearsal new ok=True old exact 0/7 | with rehearsal new ok=True old exact 7/7 (steps 50)  (2s)
+online dk_1.3x_min16 add program #9: no-rehearsal new ok=True old exact 0/8 | with rehearsal new ok=True old exact 8/8 (steps 25)  (3s)
+online dk_1.3x_min16 add program #10: no-rehearsal new ok=True old exact 0/9 | with rehearsal new ok=True old exact 9/9 (steps 50)  (3s)
+online dk_1.3x_min16 add program #11: no-rehearsal new ok=True old exact 0/10 | with rehearsal new ok=True old exact 10/10 (steps 50)  (4s)
+online dk_1.3x_min16 add program #12: no-rehearsal new ok=True old exact 0/11 | with rehearsal new ok=True old exact 11/11 (steps 50)  (4s)
+online dk_0.8x_min16 add program #5: no-rehearsal new ok=True old exact 0/4 | with rehearsal new ok=True old exact 4/4 (steps 50)  (5s)
+online dk_0.8x_min16 add program #6: no-rehearsal new ok=True old exact 0/5 | with rehearsal new ok=True old exact 5/5 (steps 50)  (5s)
+online dk_0.8x_min16 add program #7: no-rehearsal new ok=True old exact 0/6 | with rehearsal new ok=True old exact 6/6 (steps 50)  (5s)
+online dk_0.8x_min16 add program #8: no-rehearsal new ok=True old exact 0/7 | with rehearsal new ok=True old exact 7/7 (steps 50)  (6s)
+online dk_0.8x_min16 add program #9: no-rehearsal new ok=True old exact 0/8 | with rehearsal new ok=True old exact 8/8 (steps 50)  (6s)
+online dk_0.8x_min16 add program #10: no-rehearsal new ok=True old exact 0/9 | with rehearsal new ok=True old exact 9/9 (steps 75)  (6s)
+online dk_0.8x_min16 add program #11: no-rehearsal new ok=True old exact 0/10 | with rehearsal new ok=True old exact 10/10 (steps 50)  (7s)
+online dk_0.8x_min16 add program #12: no-rehearsal new ok=True old exact 0/11 | with rehearsal new ok=True old exact 11/11 (steps 100)  (7s)
+DONE
+online[sgd] dk_1.3x_min16 add program #5: no-rehearsal new ok=True old exact 4/4 | with rehearsal new ok=True old exact 4/4 (steps 10)  (1s)
+online[sgd] dk_1.3x_min16 add program #6: no-rehearsal new ok=True old exact 2/5 | with rehearsal new ok=True old exact 5/5 (steps 10)  (2s)
+online[sgd] dk_1.3x_min16 add program #7: no-rehearsal new ok=True old exact 0/6 | with rehearsal new ok=True old exact 6/6 (steps 10)  (2s)
+online[sgd] dk_1.3x_min16 add program #8: no-rehearsal new ok=True old exact 0/7 | with rehearsal new ok=True old exact 7/7 (steps 20)  (2s)
+online[sgd] dk_1.3x_min16 add program #9: no-rehearsal new ok=True old exact 0/8 | with rehearsal new ok=True old exact 8/8 (steps 20)  (3s)
+online[sgd] dk_1.3x_min16 add program #10: no-rehearsal new ok=True old exact 0/9 | with rehearsal new ok=True old exact 9/9 (steps 20)  (3s)
+online[sgd] dk_1.3x_min16 add program #11: no-rehearsal new ok=True old exact 0/10 | with rehearsal new ok=True old exact 10/10 (steps 20)  (3s)
+online[sgd] dk_1.3x_min16 add program #12: no-rehearsal new ok=True old exact 0/11 | with rehearsal new ok=True old exact 11/11 (steps 20)  (4s)
+online[sgd] dk_0.8x_min16 add program #5: no-rehearsal new ok=True old exact 0/4 | with rehearsal new ok=True old exact 4/4 (steps 20)  (4s)
+online[sgd] dk_0.8x_min16 add program #6: no-rehearsal new ok=True old exact 0/5 | with rehearsal new ok=True old exact 5/5 (steps 20)  (4s)
+online[sgd] dk_0.8x_min16 add program #7: no-rehearsal new ok=True old exact 0/6 | with rehearsal new ok=True old exact 6/6 (steps 20)  (5s)
+online[sgd] dk_0.8x_min16 add program #8: no-rehearsal new ok=True old exact 0/7 | with rehearsal new ok=True old exact 7/7 (steps 30)  (5s)
+online[sgd] dk_0.8x_min16 add program #9: no-rehearsal new ok=True old exact 0/8 | with rehearsal new ok=True old exact 8/8 (steps 20)  (5s)
+online[sgd] dk_0.8x_min16 add program #10: no-rehearsal new ok=True old exact 0/9 | with rehearsal new ok=True old exact 9/9 (steps 50)  (5s)
+online[sgd] dk_0.8x_min16 add program #11: no-rehearsal new ok=True old exact 0/10 | with rehearsal new ok=True old exact 10/10 (steps 40)  (6s)
+online[sgd] dk_0.8x_min16 add program #12: no-rehearsal new ok=True old exact 0/11 | with rehearsal new ok=True old exact 11/11 (steps 100)  (6s)
+DONE

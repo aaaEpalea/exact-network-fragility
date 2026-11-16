@@ -1,0 +1,31 @@
+majority|N8|onehot      : m=  17 params=   1785 | sigma50 static 0.152 (rel 0.618) fresh-par 0.175 | act: fresh 0.181 fixed 0.195 burst 0.453 | cert act-tube 0.167 par-eps 0.050 | slack/row 0.177  (10s)
+majority|N8|rep3        : m=  51 params=  15759 | sigma50 static 0.105 (rel 1.217) fresh-par 0.105 | act: fresh 0.311 fixed 0.357 burst 0.868 | cert act-tube 0.167 par-eps 0.032 | slack/row 0.306  (22s)
+majority|N8|rep5        : m=  85 params=  43605 | sigma50 static 0.100 (rel 1.312) fresh-par 0.104 | act: fresh 0.394 fixed 0.415 burst 1.263 | cert act-tube 0.167 par-eps 0.019 | slack/row 0.395  (36s)
+majority|N8|willshaw    : m=  48 params=  13968 | sigma50 static 0.037 (rel 0.426) fresh-par 0.030 | act: fresh 0.085 fixed 0.150 burst 0.650 | cert act-tube 0.033 par-eps 0.000 | slack/row 0.079  (47s)
+majority|N8|grid2       : no exact code found
+majority|N16|onehot     : m=  33 params=   6633 | sigma50 static 0.107 (rel 0.604) fresh-par 0.112 | act: fresh 0.140 fixed 0.157 burst 0.432 | cert act-tube 0.167 par-eps 0.050 | slack/row 0.177  (58s)
+majority|N16|rep3       : m=  99 params=  59103 | sigma50 static 0.093 (rel 1.169) fresh-par 0.105 | act: fresh 0.228 fixed 0.243 burst 0.714 | cert act-tube 0.167 par-eps 0.022 | slack/row 0.306  (72s)
+majority|N16|rep5       : m= 165 params= 163845 | sigma50 static 0.062 (rel 1.368) fresh-par 0.072 | act: fresh 0.364 fixed 0.358 burst 0.860 | cert act-tube 0.167 par-eps 0.013 | slack/row 0.395  (91s)
+majority|N16|willshaw   : m=  64 params=  24768 | sigma50 static 0.035 (rel 0.410) fresh-par 0.029 | act: fresh 0.067 fixed 0.092 burst 0.457 | cert act-tube 0.020 par-eps 0.000 | slack/row 0.065  (105s)
+majority|N16|grid2      : no exact code found
+majority|N32|onehot     : m=  65 params=  25545 | sigma50 static 0.104 (rel 0.645) fresh-par 0.105 | act: fresh 0.115 fixed 0.120 burst 0.316 | cert act-tube 0.167 par-eps 0.042 | slack/row 0.177  (120s)
+majority|N32|rep3       : m= 195 params= 228735 | sigma50 static 0.086 (rel 1.221) fresh-par 0.104 | act: fresh 0.208 fixed 0.214 burst 0.484 | cert act-tube 0.167 par-eps 0.014 | slack/row 0.306  (145s)
+majority|N32|rep5       : m= 325 params= 634725 | sigma50 static 0.056 (rel 1.763) fresh-par 0.056 | act: fresh 0.333 fixed 0.295 burst 0.755 | cert act-tube 0.167 par-eps 0.008 | slack/row 0.395  (196s)
+majority|N32|willshaw   : m=  96 params=  55584 | sigma50 static 0.033 (rel 0.358) fresh-par 0.029 | act: fresh 0.059 fixed 0.068 burst 0.352 | cert act-tube 0.019 par-eps 0.000 | slack/row 0.062  (210s)
+majority|N32|grid2      : no exact code found
+dyck|N8|onehot          : m=  10 params=    630 | sigma50 static 0.214 (rel 0.516) fresh-par 0.213 | act: fresh 0.221 fixed 0.265 burst 0.621 | cert act-tube 0.167 par-eps 0.053 | slack/row 0.177  (224s)
+dyck|N8|rep3            : m=  30 params=   5490 | sigma50 static 0.128 (rel 1.298) fresh-par 0.125 | act: fresh 0.384 fixed 0.455 burst 1.701 | cert act-tube 0.167 par-eps 0.040 | slack/row 0.306  (236s)
+dyck|N8|rep5            : m=  50 params=  15150 | sigma50 static 0.124 (rel 1.361) fresh-par 0.131 | act: fresh 0.420 fixed 0.483 burst 1.602 | cert act-tube 0.167 par-eps 0.024 | slack/row 0.395  (248s)
+dyck|N8|willshaw        : m=  24 params=   3528 | sigma50 static 0.042 (rel 0.317) fresh-par 0.030 | act: fresh 0.097 fixed 0.185 burst 0.867 | cert act-tube 0.033 par-eps 0.000 | slack/row 0.079  (258s)
+dyck|N8|grid2           : no exact code found
+dyck|N16|onehot         : m=  18 params=   1998 | sigma50 static 0.162 (rel 0.492) fresh-par 0.138 | act: fresh 0.157 fixed 0.175 burst 0.379 | cert act-tube 0.167 par-eps 0.050 | slack/row 0.177  (268s)
+dyck|N16|rep3           : m=  54 params=  17658 | sigma50 static 0.113 (rel 1.360) fresh-par 0.117 | act: fresh 0.233 fixed 0.294 burst 0.671 | cert act-tube 0.167 par-eps 0.032 | slack/row 0.306  (283s)
+dyck|N16|rep5           : m=  90 params=  48870 | sigma50 static 0.095 (rel 1.376) fresh-par 0.107 | act: fresh 0.386 fixed 0.385 burst 0.806 | cert act-tube 0.167 par-eps 0.019 | slack/row 0.395  (13s)
+dyck|N16|willshaw       : m=  48 params=  13968 | sigma50 static 0.038 (rel 0.409) fresh-par 0.029 | act: fresh 0.073 fixed 0.143 burst 0.762 | cert act-tube 0.033 par-eps 0.000 | slack/row 0.079  (25s)
+dyck|N16|grid2          : no exact code found
+dyck|N32|onehot         : m=  34 params=   7038 | sigma50 static 0.122 (rel 0.668) fresh-par 0.124 | act: fresh 0.123 fixed 0.146 burst 0.296 | cert act-tube 0.167 par-eps 0.050 | slack/row 0.177  (37s)
+dyck|N32|rep3           : m= 102 params=  62730 | sigma50 static 0.108 (rel 1.366) fresh-par 0.122 | act: fresh 0.224 fixed 0.246 burst 0.536 | cert act-tube 0.167 par-eps 0.022 | slack/row 0.306  (53s)
+dyck|N32|rep5           : m= 170 params= 173910 | sigma50 static 0.066 (rel 1.487) fresh-par 0.065 | act: fresh 0.398 fixed 0.381 burst 0.707 | cert act-tube 0.167 par-eps 0.013 | slack/row 0.395  (74s)
+dyck|N32|willshaw       : m=  64 params=  24768 | sigma50 static 0.044 (rel 0.516) fresh-par 0.029 | act: fresh 0.069 fixed 0.108 burst 0.483 | cert act-tube 0.020 par-eps 0.000 | slack/row 0.065  (87s)
+dyck|N32|grid2          : no exact code found
+DONE

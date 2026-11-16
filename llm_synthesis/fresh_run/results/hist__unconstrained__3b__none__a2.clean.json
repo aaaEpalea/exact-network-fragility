@@ -1,0 +1,30 @@
+{
+ "task": "hist",
+ "condition": "unconstrained",
+ "submission": "llm_synthesis/fresh_run/submissions/hist__unconstrained__3b__none__a2.py",
+ "meta": {},
+ "config": {
+  "n_layers": 1,
+  "n_heads": 1,
+  "d_model": 9,
+  "d_head": 7,
+  "d_mlp": 6,
+  "causal": false
+ },
+ "validation_errors": [],
+ "params": {
+  "n_params": 550,
+  "nonzero_frac": 0.07818181818181819,
+  "max_abs": 56.0,
+  "mean_abs_nonzero": 11.805187225341797
+ },
+ "test_set_accuracy": 1.0,
+ "exhaustive": {
+  "all_correct": true,
+  "n_wrong": 0,
+  "n_total": 335922
+ },
+ "clean_correct": true,
+ "status": "correct",
+ "seconds": 6.193694353103638
+}
