@@ -22,7 +22,6 @@
 * Can a construction principle be derived that predicts, before measurement, which of several equivalent realizations of a program is robust, and builds a more robust one without losing exactness?
 * How does the picture change for trained networks, larger state spaces, and real hardware noise models?
 * Is there a shared-capacity composition of programs that beats block-diagonal stacking in robustness?
-<!-- AUTHOR: add the research directions you want to pursue next here. -->
 
 ## 17. Limitations
 
@@ -36,7 +35,7 @@
 
 ## 18. Reproducibility and repository guide
 
-**Repository.** https://github.com/aaaEpalea/exact-network-fragility (archived release with DOI https://doi.org/10.5281/zenodo.24275681; this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
+**Repository.** https://github.com/aaaEpalea/exact-network-fragility (archived release, Zenodo Concept DOI https://doi.org/10.5281/zenodo.24275680; latest version v1.0.1: https://doi.org/10.5281/zenodo.24291013; this report's source is in `report/`; installation and a command for every experiment are in `REPRODUCE.md`).
 
 **Environment.** Python 3.12, JAX (CPU), NumPy, SciPy, Matplotlib, optax; Tracr and dm-haiku installed from the Tracr repository for the compiled baselines. The longest experiments run in minutes to about an hour on one CPU core; the Part I scaling study took about 1.5 hours in total. Every long script is resumable.
 
@@ -56,7 +55,7 @@
 
 **Data.** The consolidated dataset has one row per network with architecture, size, weight statistics, measured sigma50 under four protocols, certificate and attack radii where available, and predictor outputs. Per-attempt LLM submissions are stored exactly as received.
 
-**Licences (proposal, to be confirmed by the author).** Code: MIT. Text, figures and data: CC BY 4.0.
+**Licences.** Code: MIT. Text, figures and data: CC BY 4.0.
 
 ## Appendix A. Correction and deviation log
 

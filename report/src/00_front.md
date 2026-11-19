@@ -1,6 +1,6 @@
 # How fragile are exactly-correct neural networks? A technical report on constructed, compiled, trained and LLM-written networks under parameter noise
 
-*Technical report and lab notebook. Code, harness, data and every intermediate result are in the accompanying repository: https://github.com/aaaEpalea/exact-network-fragility (archived release, DOI: https://doi.org/10.5281/zenodo.24275681).*
+*Technical report and lab notebook. Code, harness, data and every intermediate result are in the accompanying repository: https://github.com/aaaEpalea/exact-network-fragility (archived release, Zenodo Concept DOI: https://doi.org/10.5281/zenodo.24275680; latest version v1.0.1: https://doi.org/10.5281/zenodo.24291013).*
 
 ## Summary
 

@@ -108,6 +108,6 @@ Against the compiler (category 1) on the three shared tasks:
 
 **Question.** Limitations of the contaminated run.
 
-One LLM, one attempt per cell, contaminated context, tasks are small, hidden-test seeds fixed, certificate sample-based and loose, attack weak (30 steps, 1 restart), category 3b/4 boundary relies on transcript review, Tracr certificates/attacks not applicable, no trained same-family baselines yet. The fresh-session run (`llm_synthesis/README_FRESH_SESSION.md`) is still to be done by the project owner and will be added as a separate, never-pooled run.
+One LLM, one attempt per cell, contaminated context, tasks are small, hidden-test seeds fixed, certificate sample-based and loose, attack weak (30 steps, 1 restart), category 3b/4 boundary relies on transcript review, Tracr certificates/attacks not applicable, no trained same-family baselines yet.
 
 > **Takeaway.** One LLM, one attempt per cell, small tasks, sample-based certificate, weak attack.

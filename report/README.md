@@ -6,4 +6,4 @@
 * `figures/` - 19 figures (PNG, 140 dpi for the new ones). `FIGURES.md` lists every caption.
 * `build_report.py`, `make_figures.py`, `overlay_AF.py`, `overlay_GM.py` - the scripts that regenerate the report and the new figures from `RESULTS.md`, the JSON result files and the theory documents, so numbers in the text and tables always match the data.
 
-Conversion notes: `<details>` blocks are valid in MDX; the front-page "AUTHOR" comment marks the place for the author's own research directions (section 16); the "Part" headings are level 2 and result blocks level 3 (A1, A2, ...) so a table of contents can be generated from the headings.
+Conversion notes: `<details>` blocks are valid in MDX; the "Part" headings are level 2 and result blocks level 3 (A1, A2, ...) so a table of contents can be generated from the headings.
